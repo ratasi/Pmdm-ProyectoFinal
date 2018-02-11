@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "764474206011",
+    "firebase_url": "https://pmdm-8b3e1.firebaseio.com",
+    "project_id": "pmdm-8b3e1",
+    "storage_bucket": "pmdm-8b3e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764474206011:android:24f5777a8abdc50e",
+        "android_client_info": {
+          "package_name": "com.example.rafatarrega.navdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764474206011-1jngjnksmf47dk9jfvs1t4c9474293ou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rafatarrega.navdrawer",
+            "certificate_hash": "5c88c794ec2d686e3112df3f8257f402b1f05366"
+          }
+        },
+        {
+          "client_id": "764474206011-qh1o9bg01ksi5hq0c2bri8fl0armutaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvdXnVbHcEYSx5QTJBFl1oqf9oPYe9qJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764474206011-qh1o9bg01ksi5hq0c2bri8fl0armutaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

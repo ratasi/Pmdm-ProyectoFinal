@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rafatarrega.navdrawer.FragmentSound" >
+
+
+    <RelativeLayout
+        android:background="@drawable/backsound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:text="PLAY" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/play"
+            android:layout_alignStart="@+id/play"
+            android:layout_below="@+id/play"
+            android:layout_marginTop="82dp"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:text="Parar música"
+            android:textColor="@android:color/background_dark" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
