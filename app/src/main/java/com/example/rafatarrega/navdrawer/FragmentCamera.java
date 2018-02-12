@@ -30,9 +30,18 @@ import static android.app.Activity.RESULT_OK;
  */
 public class FragmentCamera extends Fragment {
 
+    //Prueba Camara
+
+
+
+
+
+
+
+
+
+    //Fin prueba camara
     private ImageButton btnImagen;
-    public final static int RESP_TOMAR_FOTO = 1000;
-    private Uri mImageUri;
 
     ImageView imageView;
 
@@ -60,60 +69,11 @@ public class FragmentCamera extends Fragment {
             }
         });
 
-        //btnImagen = (ImageButton) v.findViewById(R.id.imgButton);
-
-
-
-
-
-       /* btnImagen.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.FROYO)
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent,0);
-
-                //Temporaly file to save the photo
-                File photo = null;
-                try{
-                    //place to store the photo
-                    photo = FragmentCamera.createTemporaryFile("picture",".jpg", getContext());
-
-                    photo.delete();
-                } catch (Exception e){
-                    Log.v(getClass().getSimpleName(),
-                            "Can´ create file to take picture");
-                }
-                // mImageUri = Uri.fromFile(photo);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageUri);
-                startActivityForResult(intent, RESP_TOMAR_FOTO);
-
-            }
-        });*/
         return v;
     }
 
 
-  /*  @RequiresApi(api = Build.VERSION_CODES.FROYO)
-    public static File createTemporaryFile(String part, String ext, Context myContext) throws Exception{
-        File tempDir = myContext.getExternalCacheDir();
-        tempDir = new File(tempDir.getAbsolutePath() + "/temp");
-        if (!tempDir.exists()){
-            tempDir.mkdir();
-        }
-        return File.createTempFile(part, ext, tempDir);
-    }*/
 
-
-    /*@Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data){
-        if (requestCode == RESP_TOMAR_FOTO && resultCode == RESULT_OK){
-           //Ejemplo1
-            // btnImagen.setImageURI(mImageUri);
-
-
-        }
-    }*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data){

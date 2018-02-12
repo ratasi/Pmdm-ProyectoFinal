@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity
         FragmentProfile.OnFragmentInteractionListener,
         FragmentSound.OnFragmentInteractionListener{
 
-ImageView imageView;
-Button btnCamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,25 +45,7 @@ Button btnCamera;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-    //Prueba Camara
 
-        btnCamera = (Button) findViewById(R.id.btnCameraMain);
-        imageView  = (ImageView) findViewById(R.id.imageViewMain);
-
-        btnCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
-            }
-        });
-
-
-
-
-
-
-            //Fin prueba camara
 
 
 
@@ -95,17 +75,6 @@ Button btnCamera;
 
     }
 
-    //Prueba camara
-
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        super.onActivityResult(requestCode, resultCode, data);
-        Bitmap bitmap = (Bitmap)data.getExtras().get("data");
-        imageView.setImageBitmap(bitmap);
-    }
-    //Fin prueba camara
 
     @Override
     public void onBackPressed() {

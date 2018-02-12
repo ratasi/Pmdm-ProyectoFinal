@@ -62,33 +62,6 @@ public class FragmentProfile extends Fragment {
 
         bbdd = FirebaseDatabase.getInstance().getReference("usuarios");
 
-        /*
-        bbdd.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                ArrayAdapter<String> adaptador;
-                ArrayList<String> listado = new ArrayList<>();
-
-                for (DataSnapshot datasnapshot: dataSnapshot.getChildren()){
-                    Usuarios usuarios = datasnapshot.getValue(Usuarios.class);
-
-
-
-                   String nickname = usuarios.getNickname();
-                    listado.add(nickname);*/
-                //}
-
-                //adaptador = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, listado);
-                //lista.setAdapter(adaptador);
-            //}
-
-
-           /* @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });*/
 
 
         btnCrearUsuario.setOnClickListener(new View.OnClickListener() {
